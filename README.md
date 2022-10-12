@@ -2,3 +2,4 @@
 
 ## Integrantes:
 - Ulises Palazzo
+- Gaspar Shcherbyna

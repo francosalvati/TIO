@@ -3,3 +3,4 @@
 ## Integrantes:
 - Ulises Palazzo
 - Gaspar Shcherbyna
+- Maximiliano Alonso

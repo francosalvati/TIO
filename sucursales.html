@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.svg" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+        
+    <script src="https://kit.fontawesome.com/ea9535a4b8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/odometer@0.4.8/themes/odometer-theme-default.css">
+    
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Sucursales</title>
+</head>
+<body>
+    <div class="container-btn">
+        <button id="cruz" style="display: none;"><i class="fa-solid fa-x"></i></button>
+        <button id="desp"><i class="fa-solid fa-bars"></i></button>
+    </div>
+    <header id="nav" class="head-nav blur">
+        <div class="nav-logo">
+            <a href="index.html"></a>
+        </div>
+        <nav class="nav-bar">
+            <ul class="navlist">
+                <li>
+                    <a href="cervezas.html">
+                        <span class="icon">
+                            <object class="svgClass" type="image/svg+xml" data="assets/beer.svg"></object>
+                        </span>
+                        <span class="title">Cervezas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="sucursales.html">
+                        <span class="icon">
+                            <object class="svgClass" type="image/svg+xml" data="assets/map.svg"></object>                          
+                        </span>
+                        <span class="title">Sucursales</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="nosotros.html">
+                        <span class="icon">
+                            <object class="svgClass" type="image/svg+xml" data="assets/nosotros.svg"></object>                         
+                        </span>
+                        <span class="title">Nosotros</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="contacto.html">
+                        <span class="icon">
+                            <object class="svgClass" type="image/svg+xml" data="assets/contacto.svg"></object>  
+                        </span>
+                        <span class="title">Contacto</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="nav-footer">
+            <a class="link" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+            <a class="link" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a class="link" href="https://www.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </header>
+    <div class="verificador">
+        <img src="assets/alto-ahi.png" alt="alto ahi meme">
+        <div class="popup">
+            <h2>Compra para distribucion y consumo de bebidas alcoholicas</h2>
+            <p>Ingrese su <strong>fecha de nacimiento</strong> para poder continuar</p>
+            <form class="fecha" id="formEdad">
+                <input type="date" name="fecha" required>
+                <button type="submit" id="btn-verif">enviar</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

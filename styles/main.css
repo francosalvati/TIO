@@ -164,6 +164,161 @@ body{
     position: absolute;
 }
 
+main.container{
+    z-index: -1;
+    padding-left: 150px;
+    width: 100vw;
+    height: 100vh;
+}
+
+main.container .fondo{
+    width: 100%;
+    height: 100vh;
+    background: url(../assets/pared-birra.png) content-box;
+    background-size: auto 100%;
+}
+
+main.container .contenido .titulo-vistoso{
+    font-family: 'Acme', sans-serif;
+    text-transform: uppercase;
+    grid-area: titulo;
+    font-size: 3.5rem;
+}
+
+main.container .contenido .titulo-vistoso p{
+    font-family: 'Acme', sans-serif;
+    text-transform: initial;
+    font-size: .3em;
+}
+
+main.container .contenido{
+    padding: 180px 50px 0px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: "titulo titulo"
+                         "auto auto";
+    grid-column-gap: 50px;
+    grid-row-gap: 60px;
+}
+
+main.container .contenido .card{
+    background-color: #D9670480;
+    border-radius: 25px;
+    box-shadow: 0px 0px 5px 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+.card .title{
+    font-family: "Acme", sans-serif;
+    font-size: 1.7rem;
+}
+
+.card .odometer{
+    font-size: 3rem;
+    font-family: "Roboto mono", monospace;
+}
+
+.verificador{
+    z-index: 100;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.verificador .popup{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #441901;
+    width: 500px;
+    padding: 30px;
+    color: #F2CCB6;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    align-content: space-between;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.verificador .popup .fecha{
+    z-index: 1;
+}
+
+.verificador .popup .fecha input[type="date"], .verificador .popup .fecha button{
+    background-color: #F2CCB6;
+    color: #441901;
+    padding: 10px;
+    font-family: "Roboto mono", monospace;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.verificador .popup .fecha button{
+    text-transform: uppercase;
+    border: 1px solid #F2CCB6;
+}
+
+.verificador .popup .fecha button:hover{
+    background-color: #441901;
+    color: #F2CCB6;
+    transition: .5s;
+}
+
+.verificador img{
+    position: absolute;
+    bottom: -5px;
+    left: 0px;
+}
+
+/*==========estilos carousel==============*/
+.pr_block-container {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.pr_logos-container{
+    width: 100%;
+}
+
+.pr_block-wrapper {
+    display: flex;
+    width: 300%;
+    animation: bannerscroll 50s linear infinite;
+}
+
+.pr_logos-wrapper {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+.pr_logos-wrapper li {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  margin: 10px;
+}
+
+.pr_logos-wrapper li img {
+    display: block;
+    width: 100%;
+    object-fit: contain;
+}
+
+
 /*==================cerbezas.html======================*/
 /*===============fin-cerbezas.html=====================*/
 

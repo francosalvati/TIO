@@ -326,4 +326,75 @@ main.container .contenido .card{
 /*===============fin-sucursales.html===================*/
 
 /*==================contacto.html======================*/
+
+.contact-form{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    padding: 0px 150px;
+}
+
+.contact-form label{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contact-form label span, p span{
+    color: rgb(182, 0, 0);
+}
+
+.form-group input, .message-error, .message-success, .form-row textarea, .captcha input{
+    margin-top: 5px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #f2ccb68a;
+    border: 2px solid #441901;
+}
+
+.message-error{
+    color: #fff;
+    background-color: rgba(255, 0, 0, 0.541);
+    border: 3px solid rgb(182, 0, 0);
+}
+
+.message-success{
+    color: #000;
+    background-color: rgba(0, 128, 0, 0.514);
+    border: 3px solid rgba(0, 88, 0, 0.548);
+}
+
+.form-group input:focus, .form-row textarea:focus, .captcha input:focus{
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.contact-form div{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.contact-form .form-row{
+    grid-column: 1/ span 2;
+}
+
+.form-row .checkbox{
+    display: flex;
+    align-items: center;
+}
+
+.form-row span input{
+    margin: 10px;
+    padding: 15px;
+    width: 20px;
+    height: 20px;
+    background-color: #f2ccb68a;
+    border: 2px solid #441901;
+}
+
+.form-row textarea{
+    resize: vertical;
+}
+
 /*===============fin-contacto.html=====================*/

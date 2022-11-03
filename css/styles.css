@@ -320,6 +320,61 @@ main.container .contenido .card{
 
 
 /*==================cerbezas.html======================*/
+nav.nav-beer{
+    width: 100%;
+    text-align: center;
+}
+
+.titulo-primario{
+    font-size: 4rem;
+    color: #732C02;
+    padding: 130px 0px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav.nav-beer .nav-list{
+    width: 100%;
+}
+
+nav.nav-beer .nav-list ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f2ccb665;
+}
+
+nav.nav-beer .nav-list ul li:hover{
+    background-color: #732C02;
+    transition: .5s;
+}
+nav.nav-beer .nav-list ul li:hover a{
+    color: #f2ccb6;
+}
+
+nav.nav-beer .nav-list ul li{
+    align-content: center;
+    width: 100%;
+    padding: 15px;
+}
+
+nav.nav-beer .nav-list ul li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #732C02;
+}
+
+.delimitador{
+    width: 100%;
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 40px;
+    margin: 20px 0px;
+    text-align: center;
+    background: url(../assets/malta.png);
+    background-size: 7%;
+}
+
 /*===============fin-cerbezas.html=====================*/
 
 /*==================sucursales.html====================*/

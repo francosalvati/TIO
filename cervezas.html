@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="assets/favicon.svg" />
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
-        
+
     <script src="https://kit.fontawesome.com/ea9535a4b8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/odometer@0.4.8/themes/odometer-theme-default.css">
-    
+
     <link rel="stylesheet" href="styles/main.css">
     <title>Cervezas</title>
 </head>
+
 <body>
     <div class="container-btn">
         <button id="cruz" style="display: none;"><i class="fa-solid fa-x"></i></button>
@@ -40,7 +42,7 @@
                 <li>
                     <a href="sucursales.html">
                         <span class="icon">
-                            <object class="svgClass" type="image/svg+xml" data="assets/map.svg"></object>                          
+                            <object class="svgClass" type="image/svg+xml" data="assets/map.svg"></object>
                         </span>
                         <span class="title">Sucursales</span>
                     </a>
@@ -48,7 +50,7 @@
                 <li>
                     <a href="nosotros.html">
                         <span class="icon">
-                            <object class="svgClass" type="image/svg+xml" data="assets/nosotros.svg"></object>                         
+                            <object class="svgClass" type="image/svg+xml" data="assets/nosotros.svg"></object>
                         </span>
                         <span class="title">Nosotros</span>
                     </a>
@@ -56,7 +58,7 @@
                 <li>
                     <a href="contacto.html">
                         <span class="icon">
-                            <object class="svgClass" type="image/svg+xml" data="assets/contacto.svg"></object>  
+                            <object class="svgClass" type="image/svg+xml" data="assets/contacto.svg"></object>
                         </span>
                         <span class="title">Contacto</span>
                     </a>
@@ -64,7 +66,8 @@
             </ul>
         </nav>
         <div class="nav-footer">
-            <a class="link" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+            <a class="link" href="https://www.facebook.com/" target="_blank"><i
+                    class="fa-brands fa-square-facebook"></i></a>
             <a class="link" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             <a class="link" href="https://www.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
@@ -81,5 +84,32 @@
         </div>
     </div>
 
+    <main id="main" class="container-beer blur">
+        <nav class="nav-beer">
+            <h1 class="titulo-primario">Nuestras cervezas</h1>
+            <div class="nav-list">
+                <ul>
+                    <li>
+                        <a href="#rubia">Rubia</a>
+                    </li>
+                    <li>
+                        <a href="#roja">Roja</a>
+                    </li>
+                    <li>
+                        <a href="#negra">Negra</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <h2 id="rubia" class="delimitador">cervezas rubias</h2>
+
+        <h2 id="roja" class="delimitador">cervezas rojas</h2>
+
+        <h2 id="negra" class="delimitador">cervezas negras</h2>
+
+    </main>
+    <script src="js/verificador.js"></script>
+
 </body>
+
 </html>

@@ -378,6 +378,29 @@ nav.nav-beer .nav-list ul li a{
 /*===============fin-cerbezas.html=====================*/
 
 /*==================sucursales.html====================*/
+
+.locales{
+    width: 100%;
+    display: flex;
+}
+
+.locales iframe{
+    width: 50%;
+    height: 100%;
+    margin: 0px 20px;
+}
+
+.locales .comentarios{
+    padding-right: 50px;
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.comentarios .clientes{
+    width: 100%;
+}
+
 /*===============fin-sucursales.html===================*/
 
 /*==================contacto.html======================*/

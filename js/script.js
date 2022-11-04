@@ -106,6 +106,33 @@ document.addEventListener("DOMContentLoaded",()=>{
 });
 
 //aca van las funciones de utilidad
+
+function generarComentario(usuario){
+    let card = document.createElement("div");
+    let valoracion = '<i class="fi fi-br-beer"></i>';
+    for(let i=0; i<Math.floor(Math.random() * 3)+2; i++)
+        valoracion+='<i class="fi fi-br-beer"></i>';
+    card.innerHTML = `<div class="card">
+                        <span class="imagen" style="background: url('${usuario.avatar}') no-repeat center/cover;"></span>
+                        <h1>${sucursales[Math.floor(Math.random()*sucursales.length-1)]} <span>@${usuario.first_name}</span></h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque consectetur, quidem laborum illum eius id quisquam vero accusamus dolor aspernatur, officia aliquid! Illum eius dignissimos, doloremque explicabo optio quia rerum!</p>
+                        <span class="valoracion">valoración: ${valoracion}</span>
+                    </div>`
+    return card;
+}
+
+async function getUsuarios(pagina){
+    try{
+        let respuesta = await fetch(`https://reqres.in/api/users?per_page=4&page=${pagina}`);
+        if(respuesta.ok){
+            let arreglo = await respuesta.json();
+            return arreglo;
+        }
+    }catch(error){
+        console.log(error);
+    }
+}
+
 function odometer(elem){
     let inicio = Math.floor(Math.random()*10000)+1000;
     elem.innerHTML = inicio;

@@ -11,7 +11,41 @@ document.addEventListener("DOMContentLoaded",()=>{
             break;
         case"sucursales":
             //aca van las funcionalidades de la seccion sucursales
-            break;
+            let pagina=1;
+            const comentarios = document.querySelector("#idComentarios");
+            const paginadoIzquierda = document.querySelector("#pagIzq");
+            paginadoIzquierda.addEventListener("click",()=>{
+                if(pagina>1){
+                    pagina-=1;
+                    comentarios.innerHTML = "";
+                    getUsuarios(pagina).then(users=>{
+                        for(const user of users.data){
+                            let comentario = generarComentario(user);
+                            comentarios.appendChild(comentario);
+                        }
+                    });
+                }
+            });
+            const paginadoDerecha = document.querySelector("#pagDer");
+            paginadoDerecha.addEventListener("click",()=>{
+                if(pagina<3){
+                    pagina+=1;
+                    comentarios.innerHTML = "";
+                    getUsuarios(pagina).then(users=>{
+                        for(const user of users.data){
+                            let comentario = generarComentario(user);
+                            comentarios.appendChild(comentario);
+                        }
+                    });
+                }
+            });
+            getUsuarios(pagina).then(users=>{
+                for(const user of users.data){
+                    let comentario = generarComentario(user);
+                    comentarios.appendChild(comentario);
+                }
+            });
+        break;
         case "contacto":
             let operaciones = ["+", "-", "*"];
             let cuenta = (Math.floor(Math.random()*100)+1)+operaciones[Math.floor(Math.random()*operaciones.length)]+(Math.floor(Math.random()*100)+1);

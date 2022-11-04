@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded",()=>{
                         }
                     });
                 }
-            });
+            }); 
             const paginadoDerecha = document.querySelector("#pagDer");
             paginadoDerecha.addEventListener("click",()=>{
                 if(pagina<3){

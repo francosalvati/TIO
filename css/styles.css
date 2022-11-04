@@ -452,6 +452,36 @@ nav.nav-beer .nav-list ul li a{
     resize: vertical;
 }
 
+.captcha{
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    width: 250px;
+    padding: 20px;
+    align-items: center;
+    background-color: #44180170;
+    border-radius: 10px;
+    color: #fff;
+    margin-bottom: 100px;
+}
+
+.captcha button{
+    padding: 8px;
+    font-size: 1rem;
+    border: none;
+    background-color: #f2ccb68a;
+    color: #000;
+}
+
+.captcha button:hover{
+    background-color: #441901;
+    color: #fff;
+    transition: .5s;
+}
+
+
 /*===============fin-contacto.html=====================*/
 /*==================cervezas.html======================*/
 

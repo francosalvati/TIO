@@ -1,0 +1,125 @@
+.us{
+    padding-left: 150px;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.fondo_us{
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    background: url(../assets/pared-birra.png);
+    
+}
+
+.us .nosotros_us{
+    padding: 20px 20px 5px 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+
+}
+
+.us .nosotros_us .titulo_us{
+    padding: 20px 20px 5px 20px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 5px 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-image: url(../assets/nosotros/workers-brewery.png);
+    background-repeat: no-repeat;
+    background-size: 750px auto;
+    background-position: center;
+    width: 750px;
+    height: 450px;
+    
+}
+
+.vistoso_nosotros{
+    font-family: 'Acme', sans-serif;
+    font-size: 3.5rem;
+    opacity: 70%;
+
+}
+
+.txt_us{
+    padding: 5px 50px 20px 50px;
+    display: flex;
+    text-align: center;
+    font-family: 'Acme', sans-serif;
+    font-size: 2rem;
+    font-style: italic;
+    color:white;
+}
+
+.historia{
+    box-shadow: 1px 0px 5px 1px black;
+    padding: 30px 50px 30px 50px;
+    display: flex;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+    font-family: "Acme", sans-serif;
+    font-size: 3rem;
+    color:white;
+    background-color: #441901;
+    border: 15px outset #D9670480;
+}
+
+.us .contenido_us{
+    margin-top: 40px;
+    padding: 40px 50px 40px 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "auto" 
+                         "auto"
+                         "auto" 
+                         "auto";            
+    grid-column-gap: 30px;
+    grid-row-gap: 40px;
+}
+
+.us .contenido_us .card_us{
+    background-color: #D9670480;
+    border-radius: 25px;
+    box-shadow: 0px 0px 5px 1px black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    
+}
+
+.card_us .img_hist{
+    width: 500px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 25px
+
+}
+
+.card_us .title_us{
+    font-family: "Acme", sans-serif;
+    font-size: 1.7rem;
+}
+
+.anio{
+    font-family: "Acme", sans-serif;
+    font-size: 3.5rem;
+    padding-bottom: 10px;
+
+}
+
+.logo_us{
+    font-size: auto;
+    margin: 10px;
+    text-align: center;
+}

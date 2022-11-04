@@ -423,6 +423,51 @@ nav.nav-beer .nav-list ul li a{
     transition: .2s;
 }
 
+.clientes .card .imagen{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 1px solid #000;
+    margin: 10px;
+    background: url(../assets/alto-ahi.png) no-repeat center/cover;
+    grid-area: imagen;
+}
+
+.clientes .card h1{
+    margin-top: 10px;
+    text-transform: uppercase;
+    grid-area: sucursal;
+    font-size: 1.2em;
+}
+.clientes .card h1 span{
+    text-transform: lowercase;
+    color: grey;
+    font-weight: lighter;
+    grid-area: usuario;
+}
+.clientes .card p{
+    font-size: .8em;
+    grid-area: comentario;
+}
+.clientes .card .valoracion{
+    grid-area: valoracion;
+}
+
+.clientes .card{
+    font-size: 1rem;
+    display: grid;
+    margin: 10px 0px;
+    border-radius: 10px;
+    grid-template-columns: 120px auto;
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-areas: "imagen sucursal"
+                         "imagen comentario"
+                         "imagen valoracion";
+    width: 100%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: #FFF;
+}
+
 /*===============fin-sucursales.html===================*/
 
 /*==================contacto.html======================*/

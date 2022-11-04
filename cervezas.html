@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.svg" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+        
+    <script src="https://kit.fontawesome.com/ea9535a4b8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/odometer@0.4.8/themes/odometer-theme-default.css">
+    
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Cervezas</title>
+</head>
+<body>
+    <div class="container-btn">
+        <button id="cruz" style="display: none;"><i class="fa-solid fa-x"></i></button>
+        <button id="desp"><i class="fa-solid fa-bars"></i></button>
+    </div>
+    <header id="nav" class="head-nav blur">
+        <div class="nav-logo">
+            <a href="index.html"></a>
+        </div>
+        <nav class="nav-bar">
+            <ul class="navlist">
+                <li>
+                    <a href="cervezas.html">
+                        <span class="icon">
+                            <object class="svgClass" type="image/svg+xml" data="assets/beer.svg"></object>
+                        </span>
+                        <span class="title">Cervezas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="sucursales.html">
+                        <span class="icon">
+                            <object class="svgClass" type="image/svg+xml" data="assets/map.svg"></object>                          
+                        </span>
+                        <span class="title">Sucursales</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="nosotros.html">
+                        <span class="icon">
+                            <object class="svgClass" type="image/svg+xml" data="assets/nosotros.svg"></object>                         
+                        </span>
+                        <span class="title">Nosotros</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="contacto.html">
+                        <span class="icon">
+                            <object class="svgClass" type="image/svg+xml" data="assets/contacto.svg"></object>  
+                        </span>
+                        <span class="title">Contacto</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="nav-footer">
+            <a class="link" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+            <a class="link" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a class="link" href="https://www.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </header>
+    <!--
+    <h2 id="rubia" class="delimitador">cervezas rubias</h2>
+    -->
+        <section class="card-beer">
+            <div class="imagen">
+                <img src="assets/birras/botella-black-horde.jpg" alt="imagen de cerbeza en botella marca Black Horse">
+            </div>
+            <div class="descripcion">
+                <h3>Black Horse Ale - Carling O'Keefe</h3>
+                <ul>
+                    <li>
+                        <h3>5%</h3>
+                        <h4>Alcohol</h4>
+                    </li>
+                    <li>
+                        <h3>22</h3>
+                        <h4>IBU</h4>
+                    </li>
+                    <li>
+                        <img src="assets/birras/tapa-black-horse.png" alt="tapa de botella marca Black Horse">
+                        <h4>Tapa</h4>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="card-beer">
+        
+            <div class="descripcion">
+                <h3>Branding Ale - Carling O'Keefe</h3>
+                <ul>
+                    <li>
+                        <img src="assets/birras/tapa-branding-ale.png" alt="imagen de cerbeza en botella marca Branding Ale">
+                        <h4>Tapa</h4>
+                    </li>
+                    <li>
+                        <h3>4.5%</h3>
+                        <h4>Alcohol</h4>
+                    </li>
+                    <li>
+                        <h3>25</h3>
+                        <h4>IBU</h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="imagen">
+                <img src="assets/birras/botella-branding-ale.jpg" alt="tapa de botella marca Branding Ale">
+            </div>
+        </section>
+        <section class="card-beer">
+            <div class="imagen">
+                <img src="assets/birras/botella-ligth-beer.jpg" alt="imagen de cerbeza en botella marca Light Beer">
+            </div>
+            <div class="descripcion">
+                <h3>Light Beer - Blacksmith Beverages Ltd</h3>
+                <ul>
+                    <li>
+                        <h3>3%</h3>
+                        <h4>Alcohol</h4>
+                    </li>
+                    <li>
+                        <h3>12</h3>
+                        <h4>IBU</h4>
+                    </li>
+                    <li>
+                        <img src="assets/birras/tapa-ligth-beer.png" alt="tapa de botella marca Light Beer">
+                        <h4>Tapa</h4>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="card-beer">
+            <div class="descripcion">
+                <h3>Labbatt Legere Light - Labatt Brewery</h3>
+                <ul>
+                    <li>
+                        <img src="assets/birras/tapa-labbat.png" alt="tapa de botella marca Labbatt Legere Light">
+                        <h4>Tapa</h4>
+                    </li>
+                    <li>
+                        <h3>4%</h3>
+                        <h4>Alcohol</h4>
+                    </li>
+                    <li>
+                        <h3>85</h3>
+                        <h4>IBU</h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="imagen">
+                <img src="assets/birras/botella-labbat.jpg" alt="imagen de cerbeza en botella marca Labbatt Legere Light">
+            </div>
+        </section>
+        <!--
+        <h2 id="roja" class="delimitador">cervezas rojas</h2>
+        -->
+        <section class="card-beer">
+            <div class="imagen">
+                <img src="assets/birras/botella-helderberg.jpg" alt="imagen de cerbeza en botella marca Heidelberg">
+            </div>
+            <div class="descripcion">
+                <h3>Heidelberg - Carling Breweries</h3>
+                <ul>
+                    <li>
+                        <h3>19%</h3>
+                        <h4>Alcohol</h4>
+                    </li>
+                    <li>
+                        <h3>53</h3>
+                        <h4>IBU</h4>
+                    </li>
+                    <li>
+                        <img src="assets/birras/tapa-heidelberg.png" alt="tapa de botella marca Heidelberg">
+                        <h4>Tapa</h4>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="card-beer">
+        
+            <div class="descripcion">
+                <h3>Extra Old Stock - Brewery</h3>
+                <ul>
+                    <li>
+                        <img src="assets/birras/tapa-extra-old-stock.png" alt="imagen de cerbeza en botella marca Extra Old">
+                        <h4>Tapa</h4>
+                    </li>
+                    <li>
+                        <h3>6.2%</h3>
+                        <h4>Alcohol</h4>
+                    </li>
+                    <li>
+                        <h3>87</h3>
+                        <h4>IBU</h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="imagen">
+                <img src="assets/birras/botella-extra-old-stock.jpg" alt="tapa de botella marca Extra Old">
+            </div>
+        </section>
+        <section class="card-beer">
+            <div class="imagen">
+                <img src="assets/birras/botella-molson-bock.jpg" alt="imagen de cerbeza en botella marca Molson Bock">
+            </div
+            <div class="descripcion">
+                <h3>Molson Bock - Molson Breweries</h3>
+                <ul>
+                    <li>
+                        <h3>5%</h3>
+                        <h4>Alcohol</h4>
+                    </li>
+                    <li>
+                        <h3>27</h3>
+                        <h4>IBU</h4>
+                    </li>
+                    <li>
+                        <img src="assets/birras/tapa-molson-bock.png" alt="tapa de botella marca Molson Bock">
+                        <h4>Tapa</h4>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="card-beer">
+            <div class="descripcion">
+                <h3>Super Bock - Labatt Brewery</h3>
+                <ul>
+                    <li>
+                        <img src="assets/birras/tapa-super-bock.png" alt="tapa de botella marca Super Bock">
+                        <h4>Tapa</h4>
+                    </li>
+                    <li>
+                        <h3>14%</h3>
+                        <h4>Alcohol</h4>
+                    </li>
+                    <li>
+                        <h3>15</h3>
+                        <h4>IBU</h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="imagen">
+                <img src="assets/birras/botella-super-bock.jpg" alt="imagen de cerbeza en botella marca Super Bock">
+            </div>
+        </section>
+        <section class="card-beer">
+            <div class="imagen">
+                <img src="assets/birras/botella-spar6.jpg" alt="imagen de cerbeza en botella marca Spar 6 Malt Liquor">
+            </div>
+            <div class="descripcion">
+                <h3>Spar 6 Malt Liquor - North Island Brewing</h3>
+                <ul>
+                    <li>
+                        <h3>6%</h3>
+                        <h4>Alcohol</h4>
+                    </li>
+                    <li>
+                        <h3>8</h3>
+                        <h4>IBU</h4>
+                    </li>
+                    <li>
+                        <img src="assets/birras/tapa-spar6.png" alt="tapa de botella marca Spar 6 Malt Liquor">
+                        <h4>Tapa</h4>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="card-beer">
+            <div class="descripcion">
+                <h3>Labbat's IPA - Labbat Limited</h3>
+                <ul>
+                    <li>
+                        <img src="assets/birras/tapa-labbat-ipa.png" alt="tapa de botella marca Labbat's IPA">
+                        <h4>Tapa</h4>
+                    </li>
+                    <li>
+                        <h3>6.6%</h3>
+                        <h4>Alcohol</h4>
+                    </li>
+                    <li>
+                        <h3>58</h3>
+                        <h4>IBU</h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="imagen">
+                <img src="assets/birras/botella-labbat-ipa.jpg" alt="imagen de cerbeza en botella marca Labbat's IPA">
+            </div>
+        </section>
+        <!--
+        <h2 id="negra" class="delimitador">cervezas negras</h2>
+        -->
+        <section class="card-beer">
+            <div class="imagen">
+                <img src="assets/birras/botella-porter.jpg" alt="imagen de cerbeza en botella marca Dow Cream Porter">
+            </div>
+            <div class="descripcion">
+                <h3>Dow Cream Porter - Carling O'Keefe Breweries</h3>
+                <ul>
+                    <li>
+                        <h3>4.9%</h3>
+                        <h4>Alcohol</h4>
+                    </li>
+                    <li>
+                        <h3>35</h3>
+                        <h4>IBU</h4>
+                    </li>
+                    <li>
+                        <img src="assets/birras/tapa-porter.png" alt="tapa de botella marca Dow Cream Porter">
+                        <h4>Tapa</h4>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="card-beer">
+        
+            <div class="descripcion">
+                <h3>Duffy's Stout - Columbia Brewing</h3>
+                <ul>
+                    <li>
+                        <img src="assets/birras/tapa-duffy-stout.png" alt="imagen de cerbeza en botella marca Duffy's Stout">
+                        <h4>Tapa</h4>
+                    </li>
+                    <li>
+                        <h3>12%</h3>
+                        <h4>Alcohol</h4>
+                    </li>
+                    <li>
+                        <h3>52</h3>
+                        <h4>IBU</h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="imagen">
+                <img src="assets/birras/botella-duffy-stout.jpg" alt="tapa de botella marca Duffy's Stout">
+            </div>
+        </section>
+        <section class="card-beer">
+            <div class="imagen">
+                <img src="assets/birras/botella-guiness.jpg" alt="imagen de cerbeza en botella marca Guinness Extra Stout">
+            </div>
+            <div class="descripcion">
+                <h3>Guinness Extra Stout - Labatt Breweries</h3>
+                <ul>
+                    <li>
+                        <h3>8.5%</h3>
+                        <h4>Alcohol</h4>
+                    </li>
+                    <li>
+                        <h3>49</h3>
+                        <h4>IBU</h4>
+                    </li>
+                    <li>
+                        <img src="assets/birras/tapa-guiness.png" alt="tapa de botella marca Guinness Extra Stout">
+                        <h4>Tapa</h4>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="card-beer">
+            <div class="descripcion">
+                <h3>Silver Spring Extra Stout - Labatt Brewery</h3>
+                <ul>
+                    <li>
+                        <img src="assets/birras/tapa-silver-spring.png" alt="tapa de botella marca Silver Spring Extra Stout">
+                        <h4>Tapa</h4>
+                    </li>
+                    <li>
+                        <h3>10%</h3>
+                        <h4>Alcohol</h4>
+                    </li>
+                    <li>
+                        <h3>55</h3>
+                        <h4>IBU</h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="imagen">
+                <img src="assets/birras/botella-silver-spring.jpg" alt="imagen de cerbeza en botella marca Silver Spring Extra Stout">
+            </div>
+        </section>
+        <section class="card-beer">
+            <div class="imagen">
+                <img src="assets/birras/botella-london-stout.jpg" alt="imagen de cerbeza en botella marca Moosehead London Stout">
+            </div>
+            <div class="descripcion">
+                <h3>Moosehead London Stout - Moosehead Breweries</h3>
+                <ul>
+                    <li>
+                        <h3>5%</h3>
+                        <h4>Alcohol</h4>
+                    </li>
+                    <li>
+                        <h3>12</h3>
+                        <h4>IBU</h4>
+                    </li>
+                    <li>
+                        <img src="assets/birras/tapa-london-stout.png" alt="tapa de botella marca Moosehead London Stout">
+                        <h4>Tapa</h4>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="card-beer">
+            <div class="descripcion">
+                <h3>Champlain Porter - O'Keefe Brewery</h3>
+                <ul>
+                    <li>
+                        <img src="assets/birras/tapa-champlain.png" alt="tapa de botella marca Champlain Porter">
+                        <h4>Tapa</h4>
+                    </li>
+                    <li>
+                        <h3>17%</h3>
+                        <h4>Alcohol</h4>
+                    </li>
+                    <li>
+                        <h3>58</h3>
+                        <h4>IBU</h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="imagen">
+                <img src="assets/birras/botella-champlain.jpg" alt="imagen de cerbeza en botella marca Champlain Porter">
+            </div>
+        </section>
+    <!--
+    </main>
+    -->
+    <div class="verificador">
+        <img src="assets/alto-ahi.png" alt="alto ahi meme">
+        <div class="popup">
+            <h2>Compra para distribucion y consumo de bebidas alcoholicas</h2>
+            <p>Ingrese su <strong>fecha de nacimiento</strong> para poder continuar</p>
+            <form class="fecha" id="formEdad">
+                <input type="date" name="fecha" required>
+                <button type="submit" id="btn-verif">enviar</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

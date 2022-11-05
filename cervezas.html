@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="assets/favicon.svg" />
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">    
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
-
+        
     <script src="https://kit.fontawesome.com/ea9535a4b8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/odometer@0.4.8/themes/odometer-theme-default.css">
-
+    
     <link rel="stylesheet" href="styles/main.css">
-    <title>Cervezas</title>
+    <title>
+    Cervezas</title>
 </head>
 <body>
     <div class="container-btn">
@@ -41,7 +41,7 @@
                 <li>
                     <a href="sucursales.html">
                         <span class="icon">
-                            <object class="svgClass" type="image/svg+xml" data="assets/map.svg"></object>
+                            <object class="svgClass" type="image/svg+xml" data="assets/map.svg"></object>                          
                         </span>
                         <span class="title">Sucursales</span>
                     </a>
@@ -71,6 +71,18 @@
         </div>
     </header>
     
+    <div class="verificador">
+        <img src="assets/alto-ahi.png" alt="alto ahi meme">
+        <div class="popup">
+            <h2>Compra para distribucion y consumo de bebidas alcoholicas</h2>
+            <p>Ingrese su <strong>fecha de nacimiento</strong> para poder continuar</p>
+            <form class="fecha" id="formEdad">
+                <input type="date" name="fecha" required>
+                <button type="submit" id="btn-verif">enviar</button>
+            </form>
+        </div>
+    </div>
+
     <main id="main" class="container-beer blur">
         <nav class="nav-beer">
             <h1 class="titulo-primario">Nuestras cervezas</h1>
@@ -114,7 +126,7 @@
             </div>
         </section>
         <section class="card-beer">
-        
+
             <div class="descripcion">
                 <h3>Branding Ale - Carling O'Keefe</h3>
                 <h4>LUPULADA / TURBIA / SEDOSA</h4>
@@ -212,7 +224,7 @@
             </div>
         </section>
         <section class="card-beer">
-        
+
             <div class="descripcion">
                 <h3>Extra Old Stock - Brewery</h3>
                 <h4>BRONCE / AROMA FRUTADO / LICOROSA</h4>
@@ -358,7 +370,7 @@
             </div>
         </section>
         <section class="card-beer">
-        
+
             <div class="descripcion">
                 <h3>Duffy's Stout - Columbia Brewing</h3>
                 <h4>PETROLEO / CAFE / SECA</h4>
@@ -479,18 +491,6 @@
             </div>
         </section>
     </main>
-    <div class="verificador">
-        <img src="assets/alto-ahi.png" alt="alto ahi meme">
-        <div class="popup">
-            <h2>Compra para distribucion y consumo de bebidas alcoholicas</h2>
-            <p>Ingrese su <strong>fecha de nacimiento</strong> para poder continuar</p>
-            <form class="fecha" id="formEdad">
-                <input type="date" name="fecha" required>
-                <button type="submit" id="btn-verif">enviar</button>
-            </form>
-        </div>
-    </div>
     <script src="js/verificador.js"></script>
-
 </body>
 </html>
